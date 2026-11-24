@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<!-- Informa que o documento utiliza HTML5 -->
+
+<html lang="pt-BR">
+<!-- Define o idioma da página -->
+
+<head>
+    <!-- Configurações da página -->
+
+    <meta charset="UTF-8">
+    <!-- Permite utilizar acentos -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Adapta a página para celulares -->
+
+    <title>Aprendendo JavaScript</title>
+    <!-- Título da aba do navegador -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Conecta o arquivo CSS -->
+</head>
+
+<body>
+    <!-- Corpo da página -->
+
+    <header>
+        <!-- Cabeçalho -->
+
+        <h1>DIOGO</h1>
+        <!-- Título principal -->
+
+        <p>Bem-vindo(a) à minha página sobre JavaScript!</p>
+        <!-- Apresentação -->
+    </header>
+
+    <main>
+        <!-- Conteúdo principal -->
+
+        <section>
+            <!-- Seção sobre mim -->
+
+            <h2>Sobre mim</h2>
+
+            <p id="texto">
+                Olá! Meu nome é DIOGO. Gosto de aprender coisas novas,
+                conhecer tecnologia e descobrir como os sites funcionam.
+            </p>
+            <!-- Texto que será alterado pelo JavaScript -->
+
+            <button id="botao">Clique em mim</button>
+            <!-- Botão que altera o texto e o fundo -->
+        </section>
+
+        <section>
+            <!-- Seção da fotografia -->
+
+            <h2>Esse sou eu!</h2>
+
+            <div class="palco">
+                <!-- Área onde a imagem pode se movimentar -->
+
+                <img src="img/foto.png" id="imagem" alt="Minha foto">
+                <!-- Imagem que receberá os efeitos -->
+            </div>
+
+            <div class="botoes">
+                <!-- Agrupa os botões da imagem -->
+
+                <button id="girar">Girar 360°</button>
+                <button id="corAngulo">Mudar cor e ângulo</button>
+                <button id="filtro">Mudar aparência</button>
+                <button id="mover">Mover imagem</button>
+            </div>
+        </section>
+
+        <section>
+            <!-- Seção dos exemplos de JavaScript -->
+
+            <h2>JavaScript na prática</h2>
+
+            <!-- JavaScript diretamente no HTML -->
+            <button onclick="alert('Olá! Você clicou no botão!')">
+                Clique aqui
+            </button>
+
+            <!-- JavaScript interno -->
+            <button onclick="mensagemInterna()">
+                Mensagem interna
+            </button>
+
+            <!-- JavaScript externo -->
+            <button id="botaoExterno">
+                Mensagem externa
+            </button>
+        </section>
+
+        <section>
+            <!-- Nova seção para revelar uma frase -->
+
+            <h2>Uma surpresa para você!</h2>
+
+            <!-- Botão que revela ou esconde a mensagem -->
+            <button id="revelar">
+                Revelar mensagem
+            </button>
+
+            <!-- Frase que começa escondida -->
+            <p id="mensagemSurpresa" class="escondida">
+                Nunca desista de aprender coisas novas!
+            </p>
+        </section>
+
+        <section>
+            <!-- Seção do campo de digitação -->
+
+            <h2>Etapa 5 - Digite alguma coisa</h2>
+
+            <!-- Campo onde o visitante digita -->
+            <input
+                type="text"
+                id="campo"
+                placeholder="Digite seu texto aqui..."
+            >
+
+            <p>O que você digitou:</p>
+
+            <!-- Espelho do texto digitado -->
+            <p id="espelho">Seu texto aparecerá aqui.</p>
+        </section>
+
+        <section>
+            <!-- Seção de curiosidades -->
+
+            <h2>Etapa 6 - Curiosidades sobre mim</h2>
+
+            <!-- Botão para adicionar curiosidades -->
+            <button id="adicionar">Adicionar curiosidade</button>
+
+            <!-- Botão para remover curiosidades -->
+            <button id="remover">Remover última curiosidade</button>
+
+            <!-- Local onde os parágrafos serão adicionados -->
+            <div id="lista-curiosidades"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <!-- Rodapé -->
+
+        <p>Projeto desenvolvido por diogo ferreira filho 1 info</p>
+    </footer>
+
+    <!-- JavaScript interno -->
+    <script>
+        // Cria uma função para mostrar uma mensagem
+        function mensagemInterna() {
+
+            // Abre uma caixa de alerta
+            alert("Esta mensagem veio do JavaScript interno!");
+        }
+    </script>
+
+    <!-- Conecta o arquivo JavaScript externo -->
+    <script src="script.js"></script>
+
+</body>
+</html>

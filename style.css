@@ -1,0 +1,193 @@
+
+
+/* Remove margens e espaços padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estiliza o corpo da página */
+body {
+    background-color: #101820;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    transition: 0.4s;
+}
+
+/* Estiliza o cabeçalho */
+header {
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+/* Estiliza o título principal */
+h1 {
+    color: #00e5ff;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+/* Estiliza os títulos das seções */
+h2 {
+    color: #00e5ff;
+    margin-bottom: 15px;
+}
+
+/* Estiliza as seções */
+section {
+    background-color: #1c2935;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 750px;
+    border-radius: 15px;
+}
+
+/* Estiliza os parágrafos */
+p {
+    margin: 12px 0;
+    line-height: 1.5;
+}
+
+/* Estiliza os botões */
+button {
+    background-color: #00bcd4;
+    color: #101820;
+    border: none;
+    padding: 12px 18px;
+    margin: 7px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse nos botões */
+button:hover {
+    background-color: #00e5ff;
+    transform: scale(1.05);
+}
+
+/* Aparência dos botões selecionados */
+button.selecionado {
+    background-color: white;
+    outline: 2px solid #00e5ff;
+}
+
+/* Estiliza o campo de texto */
+input {
+    padding: 12px;
+    width: 80%;
+    max-width: 400px;
+    border: 2px solid #00bcd4;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Estiliza o espelho */
+#espelho {
+    color: #00e5ff;
+    font-size: 20px;
+    overflow-wrap: anywhere;
+}
+
+/* Área de movimentação da imagem */
+.palco {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    margin: 20px auto;
+    background-color: #263746;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Estiliza a imagem */
+#imagem {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    top: 100px;
+    left: calc(50% - 75px);
+    transition: 0.5s;
+}
+
+/* Efeito de girar */
+.girar {
+    transform: rotate(360deg);
+}
+
+/* Efeito de mudar cor e ângulo */
+.cor-angulo {
+    filter: hue-rotate(140deg);
+    transform: rotate(20deg);
+}
+
+/* Efeito de mudar aparência */
+.filtro {
+    filter: grayscale(100%) contrast(150%);
+    border-radius: 15px !important;
+}
+
+/* Efeito ao passar o mouse sobre a imagem */
+.imagem-destaque {
+    transform: scale(1.2) rotate(8deg);
+}
+
+/* Estiliza as curiosidades */
+#lista-curiosidades p {
+    background-color: #263746;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* ===================================
+   NOVO EFEITO DA MENSAGEM SURPRESA
+   =================================== */
+
+/* Esconde a mensagem inicialmente */
+.escondida {
+    display: none;
+}
+
+/* Estiliza a mensagem quando aparece */
+#mensagemSurpresa {
+    color: #00e5ff;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px;
+    background-color: #263746;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* Estiliza o rodapé */
+footer {
+    padding: 25px;
+    color: #aab7c4;
+}
+
+/* Adapta a página para celulares */
+@media (max-width: 500px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .palco {
+        height: 280px;
+    }
+
+    #imagem {
+        top: 65px;
+    }
+}
